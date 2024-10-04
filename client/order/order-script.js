@@ -144,7 +144,7 @@ function _clearForm() {
     document.getElementById('productCode').removeAttribute('disabled');
     document.getElementById('userId').value = '';
     document.getElementById('userId').removeAttribute('disabled');
-    document.getElementById('quantity').value = '';
+    document.getElementById('quantity').value = 1;
     document.getElementById('save-btn').textContent = 'Cadastrar';
     document.getElementById('cancel-btn').style.display = 'none';
 }

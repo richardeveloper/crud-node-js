@@ -34,7 +34,9 @@ database.serialize(() => {
             date TEXT NOT NULL,
             productCode INTEGER NOT NULL,
             userId INTEGER NOT NULL,
-            quantity INTEGER NOT NULL
+            quantity INTEGER NOT NULL,
+            FOREIGN KEY (productCode) REFERENCES product(id),
+            FOREIGN KEY (userId) REFERENCES user(id)
         );
     `);
 });
