@@ -94,7 +94,7 @@ function _validatePhone(response, phone) {
     }
 
     if (phone.length != 11) {
-        return response.status(400).send({ message: 'O campo telefone deve ter 11 caracteres.' });
+        return response.status(400).send({ message: 'O campo telefone deve ter 11 digítos.' });
     }
 }
 

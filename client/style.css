@@ -42,6 +42,7 @@ a {
 }
 
 .card {
+    width: 18rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -67,6 +68,10 @@ a {
     justify-content: center;
     align-items: center;
     font-family: 'Julius Sans One';
+}
+
+.footer-text {
+    letter-spacing: 1px;
 }
 
 .toast {

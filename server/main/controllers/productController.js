@@ -48,14 +48,6 @@ ProductController.findByCode = (request, response) => {
 
 ProductController.create = (request, response) => {
     _validatePrice(response, request.body.price);
-    
-    // if (isNaN(parseFloat(request.body.price))) {
-    //     return response.status(400).send({ message: 'O campo preço deve ser um valor númerico.' });
-    // }
-    
-    // if (parseFloat(request.body.price) < 1) {
-    //     return response.status(400).send({ message: 'O campo preço deve ser maior que zero.' });
-    // }
 
     const product = {
         code: request.body.code,
