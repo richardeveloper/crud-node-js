@@ -72,9 +72,6 @@ function createOrUpdateUser(event) {
         },
         body: JSON.stringify(user)
     })
-    .then(response => {
-        console.log(response);
-    })
     .then(() => {
         findAllProducts();
         _clearForm();

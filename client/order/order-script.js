@@ -161,7 +161,6 @@ async function _validateUserById(id) {
         return user; 
     } 
     catch (error) {
-        console.log(error);
         return null;
     }
 }
@@ -178,7 +177,6 @@ async function _validateProductByCode(code) {
         return product;
     } 
     catch (error) {
-        console.log(error);
         return null;
     }
 }
