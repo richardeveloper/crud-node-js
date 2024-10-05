@@ -1,6 +1,6 @@
-# CRUD FULL STACK NODE.JS
+# CRUD Full Stack Node.Js
 
-## SERVIDOR
+## Servidor
 
 <p align="justify"> Utilizando Node.js, implementar um backend com persistência de dados para um sistema de controle de pedidos de venda. </p>
 <p align="justify"> O sistema é composto das entidades: </p>
@@ -17,7 +17,7 @@
 > - Alterar os dados de um elemento específico (UPDATE);
 > - Remover um elemento específico (DELETE);
 
-## CLIENTE
+## Cliente
 
 <p align="justify"> Criar um frontend utilizando HTML, CSS e Javascript para o backend implementado. Implemente uma página principal da aplicação, com menu para as opções de cadastro de Clientes, Produtos e Vendas. </p>
 <p align="justify"> Cada página de cadastro deve permitir aos usuários: </p>
