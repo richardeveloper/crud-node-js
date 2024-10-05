@@ -50,7 +50,7 @@ function createOrUpdateProduct(event) {
         code: code,
         name: name,
         price: price
-    }
+    };
 
     const method = id ? 'PUT' : 'POST';
     const url = id ? apiUrl + '/' + id : apiUrl;

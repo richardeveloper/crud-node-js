@@ -55,8 +55,12 @@ async function createOrUpdateOrder(event) {
     const quantity = document.getElementById('quantity').value;
 
     if (!date.match(/^\d{2}\/\d{2}\/\d{4}$/)) {
-        ToastUtils.showWarningToast('A data deve ser inserida no formato dd/mm/yyyy.');
+        ToastUtils.showWarningToast('O campo data deve ser inserido no formato dd/mm/yyyy.');
         return;
+    }
+
+    if (quantity < 1) {
+        ToastUtils.showWarningToast('O campo quantidade deve ser maior que zero.')
     }
 
     const product = await _validateProductByCode(productCode);
@@ -77,7 +81,7 @@ async function createOrUpdateOrder(event) {
         productId: product.id,
         userId: user.id,
         quantity: quantity
-    }
+    };
 
     const method = id ? 'PUT' : 'POST';
     const url = id ? apiUrl + '/' + id : apiUrl;
@@ -108,7 +112,9 @@ async function createOrUpdateOrder(event) {
 
 function editOrder(id, date, productCode, userId, quantity) {
     document.getElementById('id').value = id;
+
     document.getElementById('date').value = date;
+    document.getElementById('date').setAttribute('disabled', true);
 
     document.getElementById('productCode').value = productCode;
     document.getElementById('productCode').setAttribute('disabled', true);
@@ -140,6 +146,7 @@ function cancelEdit() {
 function _clearForm() {
     document.getElementById('id').value = '';
     document.getElementById('date').value = '';
+    document.getElementById('date').removeAttribute('disabled');
     document.getElementById('productCode').value = '';
     document.getElementById('productCode').removeAttribute('disabled');
     document.getElementById('userId').value = '';

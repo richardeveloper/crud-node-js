@@ -60,7 +60,7 @@ function createOrUpdateUser(event) {
         name: name,
         email: email,
         phone: phone
-    }
+    };
 
     const method = id ? 'PUT' : 'POST';
     const url = id ? apiUrl + '/' + id : apiUrl;
