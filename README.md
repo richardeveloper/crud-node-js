@@ -19,8 +19,7 @@
 
 ## Cliente
 
-<p align="justify"> Criar um frontend utilizando HTML, CSS e Javascript para o backend implementado. Implemente uma página principal da aplicação, com menu para as opções de cadastro de Clientes, Produtos e Vendas. </p>
-<p align="justify"> Cada página de cadastro deve permitir aos usuários: </p>
+<p align="justify"> Criar um frontend utilizando HTML, CSS e Javascript para o backend implementado. Implemente uma página principal da aplicação, com menu para as opções de cadastro de Clientes, Produtos e Vendas. Cada página de cadastro deve permitir aos usuários: </p>
 
 > - Listar os elementos
 > - Listar um elemento específico (id)
